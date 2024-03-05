@@ -13,3 +13,84 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 16px;
+  min-width: 118px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 24.5px;
+  background: #171100;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.header {
+  background: #fffcf4;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  padding: 8px 21px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+}
+
+.nav a:hover,
+.nav li.active a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  content: '';
+  border-radius: 1px;
+  background: #171100;
+  width: 12px;
+  height: 2px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+.header .sign-up-btn {
+  min-width: 144px;
+}
