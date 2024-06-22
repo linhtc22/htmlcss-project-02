@@ -38,7 +38,6 @@ a {
     min-width: 118px;
     line-height: 50px;
     color: #fff;
-    font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     border-radius: 9999px;
@@ -103,7 +102,7 @@ a {
 
 .header.fixed {
     position: sticky;
-    top: -28px;
+    top: 0;
     z-index: 1;
 }
 
@@ -126,7 +125,6 @@ a {
     padding: 8px 21px;
     text-align: center;
     color: #5f5b53;
-    font-size: 1.6rem;
     transition: 0.25s;
 }
 
@@ -354,9 +352,11 @@ a {
 }
 
 .popular .course-list {
-    display: flex;
-    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
+    margin-top: 55px;
 }
 
 .popular .course-item {
@@ -404,7 +404,6 @@ a {
 .popular .rating .value {
     margin-left: 6px;
     color: #fea31b;
-    font-size: 1.6rem;
     line-height: 1.75;
 }
 
@@ -545,7 +544,6 @@ a {
 .features .desc {
     margin-top: 16px;
     color: #5f5b53;
-    font-size: 1.6rem;
     line-height: 1.75;
 }
 
@@ -588,12 +586,12 @@ a {
     width: 448px;
     margin: 16px auto 0;
     color: #696262;
-    font-size: 1.6rem;
     line-height: 1.75;
 }
 
 .blog .blog-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 55px;
     overflow: hidden;
@@ -601,7 +599,6 @@ a {
 
 .blog-list .item {
     flex-shrink: 0;
-    width: calc(33.33% - 20px);
     border-radius: 16px;
     background: #fff;
     overflow: hidden;
@@ -659,7 +656,6 @@ a {
     display: inline-block;
     margin: 12px 0;
     color: #171100;
-    font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
 }
@@ -731,7 +727,6 @@ a {
     padding: 0 48px 14px 0;
     border-bottom: 1px solid #59554b;
     color: #fff;
-    font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
 }
